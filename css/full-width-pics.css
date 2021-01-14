@@ -3,8 +3,18 @@
  * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-full-width-pics/blob/master/LICENSE)
  */
+ 
+/* 
+html {
+  font: verdana; 
+} */
+
 body {
   padding-top: 56px;
+}
+
+footer {
+  background-color: #1e385f;
 }
 
 .bg-image-full {
@@ -13,4 +23,12 @@ body {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+}
+
+.navbar {
+  background-color: #1e385f;
+}
+
+.boxed {
+  border: 2px #00ffaa;
 }
