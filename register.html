@@ -9,7 +9,7 @@
   <meta name="author" content="Ashton Sisson, Harison Nelson">
   <link rel="shortcut icon" href="images/favicon.ico">
 
-  <title>Full Width Pics - Start Bootstrap Template</title>
+  <title>livestrong - Registration</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,7 +29,7 @@
     <div class="container">
       <a class="navbar-brand" href="#">Livestrong</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"> <img src="images/livestrongcircle.jpg" class="rounded-circle" alt="livestrongcircle" height="30"> </span>
+        <span class="navbar-toggler-icon"> <img src="images/livestrongcircle.jpg" class="rounded-circle" alt="livestrongcircle" height="30"> </span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
@@ -64,24 +64,78 @@
   <!-- Content section -->
   <section class="py-5">
     <div class="container">
-      <h1>Section Heading</h1>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
-    </div>
-  </section>
+      <h1>Registration</h1>
+      <p class="lead">Please complete the registarion form</p>
 
-  <!-- Image element - set the background image for the header in the line below -->
-  <div class="py-5 bg-image-full" style="background-image: url('images/register.jpg');">
-    <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
-    <div style="height: 200px;"></div>
-  </div>
+      <form class="regiForm" id="regiForm" action="http://www.leecottrell.com/livestrong/livestrong.php" method="post">
 
-  <!-- Content section -->
-  <section class="py-5">
-    <div class="container">
-      <h1>Section Heading</h1>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+        <label for="fName">First Name:</label>
+        <input type="text" name="fName" id="fName" value="">
+        <br>
+
+        <label for="lName">Last Name:</label>
+        <input type="text" name="lName" id="lName" value="">
+        <br>
+
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" value="">
+        <br><br>
+
+        <h3>American Tours</h3>
+        <label for="usTour[]">Route 66</label>
+        <input type="checkbox" name="usTour[]" id="route" value="route">
+        <br>
+
+        <label for="usTour[]">Chesapeak Bay</label>
+        <input type="checkbox" name="usTour[]" id="chesapeake" value="chesapeake">
+        <br>
+
+        <label for="usTour[]">Blue Ridge Parkway</label>
+        <input type="checkbox" name="usTour[]" id="blue" value="blue">
+        <br>
+
+        <label for="usTour[]">Civil War Campaign</label>
+        <input type="checkbox" name="usTour[]" id="civil" value="civil">
+        <br>
+
+        <label for="usTour[]">Alaska Adventure</label>
+        <input type="checkbox" name="usTour[]" id="alaskan" value="alaskan">
+        <br>
+
+        <label for="usTour[]">Moab Slick Rock</label>
+        <input type="checkbox" name="usTour[]" id="moab" value="moab">
+        <br><br>
+
+        <h3>European Tours</h3>
+        <label for="europeTour[]">Tour De France Preview</label>
+        <input type="checkbox" name="europeTour[]" id="tour" value="tour">
+        <br>
+
+        <label for="europeTour[]">Italian Wines Store</label>
+        <input type="checkbox" name="europeTour[]" id="italian" value="italian">
+        <br>
+
+        <label for="europeTour[]">English Channel</label>
+        <input type="checkbox" name="europeTour[]" id="english" value="english">
+        <br>
+
+        <label for="europeTour[]">Roman Antiquities</label>
+        <input type="checkbox" name="europeTour[]" id="roman" value="roman">
+        <br>
+
+        <label for="europeTour[]">Swiss Alps</label>
+        <input type="checkbox" name="europeTour[]" id="swiss" value="swiss">
+        <br><br>
+
+        <p>What bike are you riding on? A rented one or an owned one?</p>
+        <label for="radio">Renting</label>
+        <input type="radio" name="bicycle" id="bicycle" value="rentBike">
+        <label for="radio">Owned</label>
+        <input type="radio" name="bicycle" id="bicycle1" value="ownBike">
+      </form>
+      <button type="button" name="regiSub" onclick="formCheck();">Submit</button>
+      <br>
+      <p id="regiOutput"></p>
     </div>
   </section>
 
@@ -104,6 +158,7 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js" charset="utf-8"></script>
 
 </body>
 
