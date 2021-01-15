@@ -4,17 +4,32 @@
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-full-width-pics/blob/master/LICENSE)
  */
  
-/* 
-html {
-  font: verdana; 
-} */
 
 body {
   padding-top: 56px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #343a40;
+  color: rgb(221, 220, 220);
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  color: #d88a42;
 }
 
 footer {
   background-color: #1e385f;
+}
+
+button {
+  background-color: #1e385f;
+  border: solid 2px #ffffff;
+  color: white;
+  padding: 10px 21px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 .bg-image-full {
@@ -25,10 +40,27 @@ footer {
   -o-background-size: cover;
 }
 
-.navbar {
-  background-color: #1e385f;
+.link {
+  color: white;
 }
 
-.boxed {
-  border: 2px #00ffaa;
+.navbar {
+  background-color: #1e385f;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  background-color: #d88a42;
+  color: #1e385f;
+}
+
+.boxed{
+  border: solid 4px rgb(255, 208, 0);
+  width: 16%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.navbar-brand, .active {
+  border-bottom: solid 4px rgb(255, 208, 0);
 }
