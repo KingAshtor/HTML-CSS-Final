@@ -61,24 +61,31 @@
   <!-- Content section -->
   <section class="py-5">
     <div class="container">
-      <h1>Section Heading</h1>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
-    </div>
-  </section>
+      <h1>Calorie Calculator</h1>
+      <p class="lead">Please input your weight, length of time cycling, and bicycling style (if mountain biking check the mountain box) </p>
+      <br>
+      <form id="calcForm">
+        <label for="weight">Input Weight(kg):</label>
+        <input type="number" name="weight" id="weight">
+        <br>
 
-  <!-- Image element - set the background image for the header in the line below -->
-  <div class="py-5 bg-image-full" style="background-image: url('images/exerciseBike.jpg');" title="Exercise Bike">
-    <span role="img" aria-label="Exercise Bike"> </span>
-    <div style="height: 200px;"></div>
-  </div>
+        <label for="time">Input Time(minutes):</label>
+        <input type="number" name="time" id="time">
+        <br>
 
-  <!-- Content section -->
-  <section class="py-5">
-    <div class="container">
-      <h1>Section Heading</h1>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+        <label for="style">Input Average Biking Speed(mph):</label>
+        <input type="style" name="style" id="style">
+        <br>
+
+        <label for="style">Check If You Have Been Mountain Biking:</label>
+        <input type="checkbox" name="mountain" id="mountainBiking">
+        <br>
+
+        <button type="button" name="subButton" onclick="calCalc();">Submit</button>
+      </form>
+
+      <br>
+      <p id=calcOut></p>
     </div>
   </section>
 
@@ -101,6 +108,7 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js" charset="utf-8"></script>
 
 </body>
 
